@@ -1,0 +1,1127 @@
+/* Relevant menu icons to be adjusted */
+
+.hosp-menu .btn1 img{
+	height:40px;
+	width:auto;
+	position: absolute;
+  left: -301px;
+  top: -120px;
+
+}
+
+/* Testing git commit */ 
+
+.hosp-menu .btn2 img {
+	height:35px;
+	width:auto;
+  position: absolute;
+  left: -310px;
+  top: 8px;
+}
+
+.hosp-menu .btn3 img {
+	height:40px;
+	width:auto;
+  position: absolute;
+  left: -309px;
+  top: 150px;
+}
+
+.mall-menu .btn1 img {
+	height:40px;
+	width:auto;
+	position: absolute;
+  left: -313px;
+  top: -124px;
+}
+
+.mall-menu .btn2 img {
+	height:40px;
+	width:auto;
+  position: absolute;
+  left: -314px;
+  top: 4px;
+}
+
+.mall-menu .btn2 .map-view {
+  position: absolute;
+  top: -200px;
+  left: 50px;
+  width: 700px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.mall-menu .btn2 .map-view.active {
+  opacity: 1;
+}
+
+.mall-menu .btn3 img {
+	height:40px;
+	width:auto;
+  position: absolute;
+  left: -309px;
+  top: 150px;
+}
+
+.retail-menu .btn1 img {
+	height:50px;
+	width:auto;
+	position: absolute;
+  left: -310px;
+  top: -132px;
+}
+
+.retail-menu .btn2 img {
+	height:50px;
+	width:auto;
+  position: absolute;
+  left: -365px;
+  top: 0px;
+}
+
+.retail-menu .btn3 img {
+	height:50px;
+	width:auto;
+  position: absolute;
+  left: -363px;
+  top: 142px;
+}
+
+
+/* Font used */
+@font-face {
+  font-family: 'Work Sans';
+  font-weight: 200;
+  font-style: normal;
+  src: url('../fonts/Work-Sans-200/Work-Sans-200.eot');
+  src: url('../fonts/Work-Sans-200/Work-Sans-200.eot?#iefix') format('embedded-opentype'),
+       local('Work Sans ExtraLight'),
+       local('Work-Sans-200'),
+       url('../fonts/Work-Sans-200/Work-Sans-200.woff2') format('woff2'),
+       url('../fonts/Work-Sans-200/Work-Sans-200.woff') format('woff'),
+       url('../fonts/Work-Sans-200/Work-Sans-200.ttf') format('truetype'),
+       url('../fonts/Work-Sans-200/Work-Sans-200.svg#WorkSans') format('svg');
+}
+
+@keyframes back {
+  from {
+    transform: translate(20px,0) rotate(59deg);
+    top: 5%;
+    left: 5%;
+  }
+  to {
+    transform: translate(-55px, 0px) rotate(120deg);
+    top: 50%;
+    left: 50%;
+  }
+}
+
+#gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #836997;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+
+#link1 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
+}
+
+#logo {
+  position:relative;
+  top:20px;
+  right:20px;
+  width:13%;
+  height: auto;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration:none;
+}
+
+.menu,
+.menu .btn .fa,
+.menu .btn.trigger .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.down-button {
+  visibility: hidden;
+}
+
+.down-button.active {
+  visibility: visible;
+}
+
+body {
+  overflow: hidden;
+}
+
+.menu {
+  height:110px;
+  width:110px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+  animation-name: back;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  transform: translate(-55px, 0px) rotate(120deg);
+  top: 50%;
+  left: 50%;
+}
+
+.menu-btn {
+  cursor: pointer;
+  transition: opacity 1s;
+}
+
+.menu .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -10;
+  cursor: pointer;
+  -webkit-transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
+  transition: opacity 1s, z-index 0.3s, transform 1s;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* Circle around the start button */
+
+.menu .circle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  filter: alpha(opacity=100);
+  opacity: 1;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border: 1px solid #fff;
+  -webkit-transition: opacity 0.5s, background 0.5s;
+  -moz-transition: opacity 0.5s, background 0.5s;
+  -ms-transition: opacity 0.5s, background 0.5s;
+  -o-transition: opacity 0.5s, background 0.5s;
+  transition: opacity 0.5s, background 0.5s;
+  z-index: -1;
+}
+
+.menu .btn.trigger {
+  opacity: 1;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.menu .btn.trigger .line {
+  width: 60%;
+  height: 1px;
+  background: #fff;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s, height 0.3s, top 0.3s;
+  transition: background-color 0.3s, height 0.3s, top 0.3s;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: translate(-50px, 0px) rotate(90deg);
+}
+
+.menu .btn.trigger .line:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: translate(16px, -12px) rotate(60deg);
+}
+
+.menu .btn.trigger .line:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: translate(-17px, -45px) rotate(-60deg);
+}
+
+.menu .btn.trigger .line:before {
+  top: -17px;
+
+}
+
+.menu .btn.trigger .line:after {
+  top: 17px;
+}
+
+.menu .rotater {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.hosp-menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  opacity: 1;
+}
+
+.hosp-menu .hosp-btn {
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.hosp-menu.active .hosp-btn {
+  position: absolute;
+  opacity: 1;
+  transform: translate(-800px,500px);
+  cursor: pointer;
+}
+
+.hosp-menu .hosp-btn .circle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: alpha(opacity=100);
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.hosp-option1 {
+  position: absolute;
+  left: -220px;
+  top: -122px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+  width:300px;
+}
+
+.hosp-menu .btn1 .circle {
+  position: absolute;
+  left: -290px;
+  top: -105px;
+}
+
+.hosp-menu .btn1 .details {
+  display: block;
+  position: absolute;
+  left: -290px;
+  top: -105px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  filter: alpha(opacity=100);
+  opacity: 0;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0);
+  padding: 30px;
+  border-radius: 50%;
+  border: 0px solid #fff;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+  z-index: -1;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.hosp-menu .btn1 .details.active {
+  position: absolute;
+  left: 400px;
+  top: -50px;
+  opacity: 1;
+  width: 450px;
+  height: 210px;
+  border-radius: 0%;
+}
+
+.hosp-option2 {
+ position: absolute;
+  left: -220px;
+  top: 10px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+
+.hosp-menu .btn2 .circle {
+  position: absolute;
+  left: -290px;
+  top: 27px;
+}
+
+.hosp-menu .btn2 .details {
+  display: block;
+  position: absolute;
+  left: -290px;
+  top: 27px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  filter: alpha(opacity=100);
+  opacity: 0;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0);
+  padding: 30px;
+  border-radius: 50%;
+  border: 0px solid #fff;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+  z-index: -1;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.hosp-menu .btn2 .details.active {
+  position: absolute;
+  left: 400px;
+  top: -50px;
+  opacity: 1;
+  width: 450px;
+  height: 280px;
+  border-radius: 0%;
+  z-index: -1;
+}
+
+.hosp-option3 {
+  position: absolute;
+  left: -220px;
+  top: 152px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+  width:300px;
+}
+
+.hosp-menu .btn3 .circle {
+  position: absolute;
+  left: -290px;
+  top: 169px;
+}
+
+.mall-menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  opacity: 1;
+}
+
+.mall-menu .mall-btn {
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.mall-menu.active .mall-btn {
+  position: absolute;
+  opacity: 1;
+  transform: translate(-800px,500px);
+  cursor: pointer;
+}
+
+.menu-btn.disappear {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0;
+}
+
+.rotater.menu-btn.disappear .btn.btn-icon .circle, .menu-btn.disappear .btn.btn-icon img, .menu-btn.disappear .btn.btn-icon a {
+  pointer-events: none;
+  cursor: default;
+  transform: translate(-500px,500px);
+}
+
+.mall-menu .mall-btn .circle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: alpha(opacity=100);
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.mall-option1 {
+   position: absolute;
+  left: -220px;
+  top: -122px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.mall-menu .btn1 .circle {
+  position: absolute;
+  left: -290px;
+  top: -105px;
+}
+
+.mall-menu .btn1 .details {
+  display: block;
+  position: absolute;
+  left: -290px;
+  top: -105px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  filter: alpha(opacity=100);
+  opacity: 0;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0);
+  padding: 30px;
+  border-radius: 50%;
+  border: 0px solid #fff;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+  z-index: -1;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.mall-menu .btn1 .details.active {
+  position: absolute;
+  left: 600px;
+  top: -20px;
+  opacity: 1;
+  width: 750px;
+  height: 600px;
+  border-radius: 0%;
+  z-index: -1;
+}
+
+.mall-menu .btn1 .details img {
+  position: relative;
+  left: 40px;
+  top: 50px;
+  height: 100px;
+  width: auto;
+}
+
+.mall-menu .btn1 .details h1 {
+  position: relative;
+  left: 250px;
+  top: -130px;
+  height: 400px;
+  width: auto;
+}
+
+.mall-menu .btn1 .details p {
+  position: relative;
+  bottom: 500px;
+  left: 270px;
+  width: auto;
+}
+
+.mall-menu .btn1 .details h2 {
+  position: relative;
+  bottom: 490px;
+  left: 540px;
+  width: auto;
+}
+
+.mall-option2 {
+  position: absolute;
+  left: -220px;
+  top: 10px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.mall-menu .btn2 .circle {
+  position: absolute;
+  left: -290px;
+  top: 27px;
+}
+
+.mall-option3 {
+  position: absolute;
+  left: -220px;
+  top: 152px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+  width:300px;
+}
+
+.mall-menu .btn3 .circle {
+  position: absolute;
+  left: -290px;
+  top: 169px;
+}
+
+.retail-menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  opacity: 1;
+}
+
+.retail-menu .retail-btn {
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.retail-menu.active .retail-btn {
+  position: absolute;
+  opacity: 1;
+  transform: translate(-800px,500px);
+  cursor: pointer;
+}
+
+.retail-menu .retail-btn .circle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: alpha(opacity=100);
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.retail-option1 {
+   position: absolute;
+  left: -220px;
+  top: -122px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.retail-menu .btn1 .circle {
+  position: absolute;
+  left: -290px;
+  top: -105px;
+}
+
+.retail-menu .btn1 .details {
+  display: block;
+  position: absolute;
+  left: -290px;
+  top: 27px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  filter: alpha(opacity=100);
+  opacity: 0;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0);
+  padding: 30px;
+  border-radius: 50%;
+  border: 0px;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+  z-index: -1;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.retail-menu .btn1 .details.active {
+  position: absolute;
+  left: 600px;
+  top: -20px;
+  opacity: 1;
+  width: 600px;
+  height: 600px;
+  border-radius: 0%;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.retail-menu .btn1 .details img {
+  position: absolute;
+  left: 40px;
+  top: -20px;
+  height: 400px;
+  width: auto;
+}
+
+.retail-menu .btn1 .details h1 {
+  position: absolute;
+  left: 250px;
+  top: -10px;
+  height: 400px;
+  width: auto;
+}
+
+.retail-menu .btn1 .details p {
+  position: absolute;
+  left: 250px;
+  top: 40px;
+  height: 400px;
+  width: auto;
+}
+
+.retail-menu .btn1 .details h2 {
+  position: absolute;
+  left: 450px;
+  top: 280px;
+  height: 400px;
+  width: auto;
+}
+
+.retail-option2 {
+  position: absolute;
+  left: -270px;
+  top: 10px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+  width:300px;
+}
+
+
+.retail-menu .btn2 .circle {
+  position: absolute;
+  left: -340px;
+  top: 27px;
+}
+
+.retail-menu .btn2 .details {
+  display: block;
+  position: absolute;
+  left: -290px;
+  top: 27px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  filter: alpha(opacity=100);
+  opacity: 0;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0);
+  padding: 30px;
+  border-radius: 50%;
+  border: 0px;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+  z-index: -1;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.retail-menu .btn2 .details.active {
+  position: absolute;
+  left: 600px;
+  top: -20px;
+  opacity: 1;
+  width: 600px;
+  height: 600px;
+  border-radius: 0%;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.retail-menu .btn2 .details img {
+  position: absolute;
+  left: 40px;
+  top: -20px;
+  height: 400px;
+  width: auto;
+}
+
+.retail-menu .btn2 .details h1 {
+  position: absolute;
+  left: 250px;
+  top: -10px;
+  height: 400px;
+  width: auto;
+}
+
+.retail-menu .btn2 .details p {
+  position: absolute;
+  left: 250px;
+  top: 40px;
+  height: 400px;
+  width: auto;
+}
+
+.retail-menu .btn2 .details h2 {
+  position: absolute;
+  left: 450px;
+  top: 280px;
+  height: 400px;
+  width: auto;
+}
+
+.retail-option3 {
+  position: absolute;
+  left: -270px;
+  top: 152px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+  width:300px;
+}
+
+
+.retail-menu .btn3 .circle {
+  position: absolute;
+  left: -340px;
+  top: 169px;
+}
+
+.retail-menu.active .btn1 img {
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8) translate(0px,3px);
+}
+
+.retail-menu.active .btn2 img {
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8) translate(0px,3px);
+}
+
+.retail-menu.active .btn3 img {
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8) translate(0px,3px);
+}
+
+/* What happens when start button is pressed */
+
+.menu {
+  transition: top 1s, left 1s, transform 1s;
+}
+.menu.active {
+  -webkit-transform: translate(5px,0) rotate(59deg);
+  transform: translate(5px,0) rotate(59deg);
+  top: 5%;
+  left: 5%;
+}
+
+.menu.active .btn-icon {
+  opacity: 1;
+  z-index: 50;
+}
+
+.menu.active .circle {
+    opacity: 0;
+}
+
+/* Circle around start button before and after */
+
+.menu .btn.trigger:active {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.menu .btn.trigger:active ~ .circle {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Menu circle before and after press */
+
+.menu.active .btn-icon .circle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: alpha(opacity=100);
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: transform 0.5s, background 0.5s;
+    -moz-transition: transform 0.5s, background 0.5s;
+    -ms-transition: transform 0.5s, background 0.5s;
+    -o-transition: transform 0.5s, background 0.5s;
+    transition: transform 0.5s, background 0.5s;
+    z-index: -1;
+}
+
+.menu.active .btn-icon:active > .circle {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8) translate(-3.2em, -3em);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Icon before and after */
+
+.menu.active .btn-icon > img{
+  transition: transform 0.5s;
+}
+
+.menu.active .btn-icon:active > img {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8) translate(0px,3px);
+}
+
+/* Menu options' icons */
+.menu-icon {
+  position: relative;
+  left: 38.5px;
+  top: 38.5px;
+  height:30%;
+  width:30%
+}
+
+.menu-icon2 {
+  position: relative;
+  left: 33px;
+  top: 33px;
+  height:40%;
+  width:40%
+}
+
+/* The menu options' font and positioning */
+.menu-option1 {
+  position: relative;
+  left: 125px;
+  top: 5px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.menu-option2 {
+  position: relative;
+  left: 80px;
+  top: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.menu-option3 {
+  position: relative;
+  left: 125px;
+  top: 5px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+  width: 200px;
+}
+
+/* The menu options' rotation */
+
+.rotater:nth-child(1) {
+  -webkit-transform: rotate(-22.5deg);
+  -ms-transform: rotate(-22.5deg);
+  transform: rotate(-22.5deg);
+}
+
+.menu.active .rotater:nth-child(1) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(22.5deg);
+  -ms-transform: translateX(-10em) rotate(22.5deg);
+  transform: translateX(-10em) rotate(22.5deg);
+}
+
+.rotater:nth-child(2) {
+  -webkit-transform: rotate(22.5deg);
+  -ms-transform: rotate(22.5deg);
+  transform: rotate(22.5deg);
+  cursor: default;
+  pointer-events: none;
+}
+
+.menu.active .rotater:nth-child(2) .btn-icon {
+  -webkit-transform: translate(20em, -4.6em) rotate(-81deg);
+  -ms-transform: translate(20em, -4.6em) rotate(-81deg);
+  transform: translate(20em, -4.6em) rotate(-81deg);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.rotater:nth-child(3) {
+  -webkit-transform: translateX(3em) rotate(67.5deg);
+  -ms-transform: translateX(3em) rotate(67.5deg);
+  transform: translateX(3em) rotate(67.5deg);
+  cursor: default;
+  pointer-events: none;
+}
+
+.menu.active .rotater:nth-child(3) .btn-icon {
+  -webkit-transform: rotate(-126deg) translate(99px, 400px);
+  -ms-transform: rotate(-126deg) translate(99px, 400px);
+  transform: rotate(-126deg) translate(99px, 400px);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.rotater:nth-child(4) {
+  -webkit-transform: rotate(112.5deg);
+  -ms-transform: rotate(112.5deg);
+  transform: rotate(112.5deg);
+  cursor: default;
+  pointer-events: none;
+}
+
+.menu.active .rotater:nth-child(4) .btn-icon {
+  -webkit-transform: rotate(-171deg) translate(125px, 578px);
+  -ms-transform: rotate(-171deg) translate(125px, 578px);
+  transform: rotate(-171deg) translate(125px, 578px);
+  cursor: pointer;
+  pointer-events: auto;
+}
