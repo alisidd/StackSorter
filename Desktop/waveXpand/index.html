@@ -1,0 +1,91 @@
+<html>
+<head>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Exo+2:500' rel='stylesheet' type='text/css'>
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="css/hover.css" rel="stylesheet" media="all">
+	
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+
+	<script async type="text/javascript">
+		$(document).ready(function(){
+			$('.parallax').parallax();
+		});
+	</script>
+	<script type="text/javascript">
+		$(".button-collapse").sideNav();
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#text1").fadeIn(2500,function(){
+				$('#text2').fadeIn(1500,function() {
+					$('#text3').fadeIn(1500);
+				});
+			});
+		});
+	</script>
+
+	<!-- Navbar with logo and login -->
+	<div class="parallax-container">
+		<!-- Navbar with logo and login -->
+		<nav id="header" class="taller">
+			<div class="nav-wrapper blue-grey darken-1 z-depth-2">
+				<a href="index.html">
+					<img src="images/logo.png" style="width:130px;height:auto" class="move-right8 move-down6 show-on-large hide-on-med-and-down">
+					<img src="images/logo.png" style="width:130px;height:auto;margin: 0 auto" class="move-right9 move-down6 show-on-medium-and-down hide-on-large-only">
+				</a>
+				<div style="position:relative;left:250px;bottom:25px;">
+					<div class="tab">
+						<div class="tab-box">
+							<a class="hvr-grow hide-on-med-and-down" style="position:relative;left:20px;bottom:5px;" href="about.html">About</a>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="tab-box">
+							<a class="hvr-grow hide-on-med-and-down" style="position:relative;left:20px;bottom:5px;" href="training.html">Training</a>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="tab-box2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</head>
+<body>
+	<p id="text1" class="noselect" style="margin: 0 auto;font-family: 'Exo 2', sans-serif;font-size: 40px;bottom: 320px; position:relative;text-align:center; display:none;">EXAMINE.</p>
+	<p id="text2" class="noselect" style="margin: 0 auto;font-family: 'Exo 2', sans-serif;font-size: 40px;bottom: 320px; position:relative;text-align:center; display:none;">EXCEED.</p>
+	<p id="text3" class="noselect" style="margin: 0 auto;font-family: 'Exo 2', sans-serif;font-size: 40px;bottom: 320px; position:relative;text-align:center; display:none;">EXPAND.</p>
+
+	<div aria-busy="true" aria-label="Loading" role="progressbar" class="container-edit">
+  <div class="swing">
+    <div class="swing-l"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="swing-r"></div>
+  </div>
+  <div class="shadow">
+    <div class="shadow-l"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="shadow-r"></div>
+  </div>
+ </div>
+</body>
+</html>
